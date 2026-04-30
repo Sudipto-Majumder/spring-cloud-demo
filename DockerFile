@@ -1,0 +1,3 @@
+FROM eclipse-temurin:21-jdk-jammy
+COPY target/*.jar hello.jar
+ENTRYPOINT ["java","-jar","/hello.jar"]
